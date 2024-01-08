@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    void Start()
+    private void Start()
     {
         StartCoroutine(Spawn());
     }
