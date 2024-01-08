@@ -169,6 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _unitSpeed: 1
   _cube: {fileID: 5572868528377213034, guid: de054c27799266341bc9dd2712197704, type: 3}
+  _target: {fileID: 1432668486}
 --- !u!1 &222050215
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,10 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _timer: 2
-  _targets:
-  - {fileID: 355880707}
-  - {fileID: 1343221395}
-  - {fileID: 1432668486}
 --- !u!4 &222050217
 Transform:
   m_ObjectHideFlags: 0
@@ -233,6 +230,7 @@ GameObject:
   - component: {fileID: 355880706}
   - component: {fileID: 355880705}
   - component: {fileID: 355880704}
+  - component: {fileID: 355880708}
   m_Layer: 0
   m_Name: Target 1
   m_TagString: Untagged
@@ -328,6 +326,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &355880708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 355880703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a618114611e4bd4ebdec35b79f62260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _path: {fileID: 6178712506416069236, guid: 0e7c9e9d9d7baeb4c971a759433ce07d, type: 3}
+  _speed: 2
 --- !u!1 &545832762
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _unitSpeed: 5
   _cube: {fileID: 5572868528377213034, guid: 4a4ba8f6da980ec478ed74f15e4f9e7b, type: 3}
+  _target: {fileID: 355880707}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -552,8 +565,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.00003279227, y: 0.9999608, z: 0.0041911257, w: 0.0078006214}
-  m_LocalPosition: {x: 0.095366724, y: 4.6101546, z: 22.25977}
+  m_LocalRotation: {x: -0.2217109, y: -0.6730581, z: 0.22289659, w: -0.6694432}
+  m_LocalPosition: {x: -24.086294, y: 17.59935, z: -0.63203955}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -572,6 +585,7 @@ GameObject:
   - component: {fileID: 1343221394}
   - component: {fileID: 1343221393}
   - component: {fileID: 1343221392}
+  - component: {fileID: 1343221396}
   m_Layer: 0
   m_Name: Target 2
   m_TagString: Untagged
@@ -667,6 +681,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1343221396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343221391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a618114611e4bd4ebdec35b79f62260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _path: {fileID: 6178712506416069236, guid: 0e7c9e9d9d7baeb4c971a759433ce07d, type: 3}
+  _speed: 3
 --- !u!1 &1432668482
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,6 +707,7 @@ GameObject:
   - component: {fileID: 1432668485}
   - component: {fileID: 1432668484}
   - component: {fileID: 1432668483}
+  - component: {fileID: 1432668487}
   m_Layer: 0
   m_Name: Target 3
   m_TagString: Untagged
@@ -774,6 +803,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1432668487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432668482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a618114611e4bd4ebdec35b79f62260, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _path: {fileID: 6178712506416069236, guid: 0e7c9e9d9d7baeb4c971a759433ce07d, type: 3}
+  _speed: 4
 --- !u!1 &1990405425
 GameObject:
   m_ObjectHideFlags: 0
@@ -820,3 +863,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _unitSpeed: 3
   _cube: {fileID: 5572868528377213034, guid: ad65572d4df7c4a45bf3bedb22e24fc5, type: 3}
+  _target: {fileID: 1343221395}

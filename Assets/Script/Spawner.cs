@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField, Min(1)] private float _timer;
-    [SerializeField] private List<Transform> _targets;
 
     private List<SpawnPoint> _spawnPoits = new List<SpawnPoint>();
 
@@ -25,9 +24,8 @@ public class Spawner : MonoBehaviour
     private IEnumerator Spawn()
     {
         int randomPoint = Random.Range(0, _spawnPoits.Count);
-        Mover clone = Instantiate(_spawnPoits[randomPoint].Cube, _spawnPoits[randomPoint].transform);
 
-        clone.StartMoving(_targets[randomPoint], _spawnPoits[randomPoint].UnitSpeed);
+        _spawnPoits[randomPoint].Spawn();
 
         yield return new WaitForSeconds(_timer);
 
